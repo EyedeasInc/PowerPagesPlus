@@ -1,0 +1,162 @@
+- adx_description: Site setting that controls the depth of the webpage hierarchy that’s cloned in a newly-added supported language. Web link sets and content snippets are cloned in the newly-added language when webpages are cloned.
+  adx_name: MultiLanguage/MaximumDepthToClone
+  adx_sitesettingid: 01fff9e2-5869-4834-9f2e-603c67ab4327
+  adx_value: 3
+- adx_name: Authentication/OpenAuth/LinkedIn/ConsumerKey
+  adx_sitesettingid: 02ff48fd-10eb-41d0-a038-0179f4af2f6a
+- adx_description: Set whether the header web template is output cached.
+  adx_name: Header/OutputCache/Enabled
+  adx_sitesettingid: 06af953e-af14-465f-8441-5b04b21041a1
+  adx_value: True
+- adx_name: ThemeFeature
+  adx_selectedThemeId: f21551a1-7244-432f-ad88-220609e070d3
+  adx_sitesettingid: 0ebebecf-e395-4e71-8782-83014ace4b80
+  adx_siteSettingId: 0ebebecf-e395-4e71-8782-83014ace4b80
+  adx_status: enable
+  adx_version: V2
+- adx_name: Profile/ShowMarketingOptionsPanel
+  adx_sitesettingid: 1882176a-f12b-40ba-970c-2272015838a7
+  adx_value: True
+- adx_description: 'Override query for site search, to apply additional weights and filters. @Query is the query text entered by a user. Lucene query syntax reference: http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html'
+  adx_name: search/query
+  adx_sitesettingid: 1ab021f5-b282-4a57-a4b9-a17734758344
+  adx_value: +(@Query) _title:(@Query) _logicalname:knowledgearticle~0.9^0.3 _logicalname:annotation~0.9^0.25 _logicalname:adx_webpage~0.9^0.2 -_logicalname:adx_webfile~0.9 adx_partialurl:(@Query) _logicalname:adx_blogpost~0.9^0.1 -_logicalname:adx_communityforumthread~0.9
+- adx_description: Site setting that determines if the language code is included in the portal URL.
+  adx_name: MultiLanguage/DisplayLanguageCodeInURL
+  adx_sitesettingid: 22b695b5-d37f-4672-9b3c-bc87f2b7fae3
+  adx_value: False
+- adx_name: Search/IndexQueryName
+  adx_sitesettingid: 2ccf1565-bebe-4b79-83f2-c670cd2a3647
+  adx_value: Portal Search
+- adx_name: Authentication/OpenAuth/Microsoft/ClientId
+  adx_sitesettingid: 40964b6d-d4a7-4f6d-a6c9-620f3a994bc6
+- adx_name: OnlineDomains
+  adx_sitesettingid: 44039a8a-a5dc-4af0-9189-e7a9807b9153
+  adx_value: sharepoint.com;microsoftonline.com
+- adx_description: A true or false value. If set to true, the local account will be marked as deprecated. The portal user will be required to migrate to a non-deprecated account.
+  adx_name: Authentication/Registration/LocalLoginDeprecated
+  adx_sitesettingid: 57468df0-6b78-44f6-88c0-b4d9ddad4531
+  adx_value: False
+- adx_name: Profile/ForceSignUp
+  adx_sitesettingid: 5c7cda42-0a3e-4416-98e2-e85c8dcdd6a1
+  adx_value: False
+- adx_name: Authentication/OpenAuth/Facebook/AppId
+  adx_sitesettingid: 5dd69ed8-2a32-4488-91d0-99e2e57ac8d6
+- adx_name: Authentication/OpenAuth/Facebook/AppSecret
+  adx_sitesettingid: 61d21a0d-459a-48c5-9482-d3ee8c953357
+- adx_name: Authentication/Registration/LoginButtonAuthenticationType
+  adx_sitesettingid: 631fc507-2f72-457b-bbae-8d2f84d53b1b
+- adx_name: Authentication/Registration/Enabled
+  adx_sitesettingid: 6347cab1-3449-48df-bc75-22f6c6b8f5e0
+  adx_value: true
+- adx_name: Search/Enabled
+  adx_sitesettingid: 65f18c95-924f-44e4-8e16-6af2ed17a984
+  adx_value: False
+- adx_description: Set whether the footer web template is output cached.
+  adx_name: Footer/OutputCache/Enabled
+  adx_sitesettingid: 687c21e0-0c2a-4e63-acb5-421233ce71c2
+  adx_value: True
+- adx_name: Profile/Enabled
+  adx_sitesettingid: 6fa1f09b-8b7f-495c-a2b2-d696c2388f8e
+  adx_value: false
+- adx_name: Authentication/OpenAuth/Microsoft/ClientSecret
+  adx_sitesettingid: 72c6f459-f2b6-4592-bb89-40f75ec2826b
+- adx_description: Sets whether or not the portal can redirect the user to the profile page after successful sign-in. By default, it is set to true.
+  adx_name: Authentication/Registration/ProfileRedirectEnabled
+  adx_sitesettingid: 72e67c01-4420-4842-9eba-7485fbf9587b
+  adx_value: true
+- adx_description: 'The amount of time the Authentication/LoginThrottling/MaxInvaildAttemptsFromIPAddress are to be within before the IP address has to wait Authentication/LoginThrottling/IpAddressTimeoutTimeSpan. Default: 00:03:00 (3 mins)'
+  adx_name: Authentication/LoginThrottling/MaxAttemptsTimeLimitTimeSpan
+  adx_sitesettingid: 75f6fbd7-7b56-478a-a13e-6cb831e59049
+  adx_value: 00:03:00
+- adx_description: Denies use of the portal to minors. By default, it is set to false.
+  adx_name: Authentication/Registration/DenyMinors
+  adx_sitesettingid: 88f4331f-c07b-4d05-a26d-ba993d04e04c
+  adx_value: false
+- adx_description: Enables or disables Azure AD as an external identity provider. By default, it is set to true.
+  adx_name: Authentication/Registration/AzureADLoginEnabled
+  adx_sitesettingid: 88ff80c4-7b71-4c7f-aa2b-4c2d5b8c2625
+  adx_value: true
+- adx_description: A true or false value. If set to true, the Last Successful Login field on the portal user’s contact will be updated with the date and time when they successfully signed in.
+  adx_name: Authentication/LoginTrackingEnabled
+  adx_sitesettingid: 8ce1d131-75ab-42cc-885c-2153039397d9
+  adx_value: False
+- adx_name: Search/IndexNotesAttachments
+  adx_sitesettingid: 948913e9-f322-43ed-a49c-948eb33cef53
+  adx_value: false
+- adx_description: Determines if faceted search is used for this portal.
+  adx_name: Search/FacetedView
+  adx_sitesettingid: 96fa3652-b9b3-4e37-b74a-d41d8ce639e1
+  adx_value: True
+- adx_description: 'The Prefix entered here will be used to filter Notes Text, allowing you to control notes exposed on the Portal ex: *WEB*'
+  adx_name: KnowledgeManagement/NotesFilter
+  adx_sitesettingid: 9e29ceb0-fa65-41a1-bfd7-a12d16786897
+  adx_value: '*WEB*'
+- adx_name: Authentication/Registration/ExternalLoginEnabled
+  adx_sitesettingid: a97a8245-989b-4bb6-b4ee-84377a926e80
+  adx_value: true
+- adx_description: A date/time value in GMT format to represent the effective date of the current published terms and conditions. If the terms agreement is enabled, portal users that have not accepted the terms after this date will be asked to accept them the next time they sign in. If the date is not provided, and the terms agreement is enabled, the terms will be presented every time portal users sign in.
+  adx_name: Authentication/Registration/TermsPublicationDate
+  adx_sitesettingid: b889034a-0dd0-4753-9927-15999c0bbb73
+- adx_name: Authentication/OpenAuth/Twitter/ConsumerSecret
+  adx_sitesettingid: b8cf7303-7e7c-48b7-ac1a-d7770642b60a
+- adx_name: Authentication/Registration/LocalLoginEnabled
+  adx_sitesettingid: b9b58848-fe74-4665-bda1-f3360bc75cb6
+  adx_value: true
+- adx_name: Authentication/OpenAuth/LinkedIn/ConsumerSecret
+  adx_sitesettingid: be5866f5-5907-4333-8ef8-deb3b2a169a6
+- adx_description: Setting controls whether attachments will be displayed on Knowledge articles
+  adx_name: KnowledgeManagement/DisplayNotes
+  adx_sitesettingid: c7116a7a-d119-4d9b-a36c-8f311f3e538d
+  adx_value: false
+- adx_name: Site/BootstrapV5Enabled
+  adx_sitesettingid: c8028eca-849f-4921-ae87-dc14d015f151
+  adx_value: true
+- adx_name: Authentication/Registration/OpenRegistrationEnabled
+  adx_sitesettingid: c9bdbdbf-02e2-4364-86f4-1623fada166c
+  adx_value: true
+- adx_name: Authentication/Registration/InvitationEnabled
+  adx_sitesettingid: cbbb7036-8464-4716-a25e-5cdf277ebab3
+  adx_value: true
+- adx_description: 'The default number of unauthenticated login attempts from an IP address before the IP address is blocked for Authentication/LoginThrottling/IpAddressTimeoutTimeSpan if the attempts occur within Authentication/LoginThrottling/MaxAttemptsTimeLimitTimeSpan amount of time. Default: 1000'
+  adx_name: Authentication/LoginThrottling/MaxInvaildAttemptsFromIPAddress
+  adx_sitesettingid: cf8fae32-2f2d-4003-be10-a028eff9a1f9
+  adx_value: 1000
+- adx_name: HTTP/X-Frame-Options
+  adx_sitesettingid: cfa9b743-79b1-4aee-a6af-5fa94a553402
+  adx_value: SAMEORIGIN
+- adx_name: Authentication/Registration/EmailConfirmationEnabled
+  adx_sitesettingid: d24315a5-bf23-4aa5-ad22-3d322eca811b
+  adx_value: true
+- adx_description: 'The amount of time the IP address will have to wait if Authentication/LoginThrottling/MaxInvaildAttemptsFromIPAddress occur within Authentication/LoginThrottling/MaxAttemptsTimeLimitTimeSpan amount of time. Default: 00:10:00 (10 mins)'
+  adx_name: Authentication/LoginThrottling/IpAddressTimeoutTimeSpan
+  adx_sitesettingid: d413efe9-c0e0-46a2-8c84-8fb3fb972cd8
+  adx_value: 00:10:00
+- adx_description: Used to group a set of entities under an entry in the record type facet view.
+  adx_name: Search/RecordTypeFacetsEntities
+  adx_sitesettingid: d8364f96-c5c7-4e45-8483-e465d416f073
+  adx_value: Downloads:annotation,adx_webfile
+- adx_description: Denies use of the portal to minors without parental consent. By default, it is set to false.
+  adx_name: Authentication/Registration/DenyMinorsWithoutParentalConsent
+  adx_sitesettingid: dc741e52-80e4-4d08-a451-1da2d1fc51f9
+  adx_value: false
+- adx_description: >-
+    A collection of search logical name filter options. Defining a value here will add dropdown filter options to site-wide search.
+
+
+    This value should be in the form of name/value pairs, with name and value separated by a colon, and pairs separated by a semicolon. For example: "Forums:adx_communityforum,adx_communityforumthread,adx_communityforumpost;Blogs:adx_blog,adx_blogpost,adx_blogpostcomment".
+  adx_name: search/filters
+  adx_sitesettingid: dc83f684-60fc-40cc-9aa4-452a950d428b
+- adx_description: A true or false value. If set to true, the portal will display the terms and conditions of the site. Users must agree to the terms and conditions before they are considered authenticated and can use the site.
+  adx_name: Authentication/Registration/TermsAgreementEnabled
+  adx_sitesettingid: dc9b17d6-2b51-4a2e-9e3f-541c03e28c3e
+  adx_value: false
+- adx_name: Header/ShowAllProfileNavigationLinks
+  adx_sitesettingid: e0d29e35-de09-420a-bce1-7184f6e12046
+  adx_value: false
+- adx_name: Authentication/OpenAuth/Twitter/ConsumerKey
+  adx_sitesettingid: eb51fad7-53aa-4fb4-b595-fbe7b45c0c22
+- adx_description: Enabling this setting will show all customer activity on the portal timeline.
+  adx_name: CustomerSupport/DisplayAllUserActivitiesOnTimeline
+  adx_sitesettingid: f6c32d9c-56fa-401f-a3cb-cecdd53f67a1
+  adx_value: false
