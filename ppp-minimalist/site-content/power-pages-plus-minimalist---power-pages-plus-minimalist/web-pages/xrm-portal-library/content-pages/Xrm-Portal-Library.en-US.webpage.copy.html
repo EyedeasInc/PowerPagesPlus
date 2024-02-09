@@ -1,0 +1,47 @@
+<div id="iankh" class="row sectionBlockLayout sectionPrimaryColor text-start" style="display: flex; flex-wrap: wrap; height: 15px; padding: 8px; margin: 0px;"><div id="ixa0j" class="container" style="display: flex; flex-wrap: wrap;"></div></div>
+<div id="ii2c5" class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; min-height: 361px; padding: 8px; margin: 0px;">
+  <div id="inyuu" class="container" style="display: flex; flex-wrap: wrap;">
+    <div id="izxol" class="col-lg-12 columnBlockLayout" style="flex-grow: 1; min-width: 250px; word-break: break-word; display: flex; flex-direction: column;">
+      <h2 id="iixdg">Xrm.Portal.js</h2>
+      <p id="itiu1">A JavaScript library for Power Pages (previously Power Apps portals ). To write basic functions like show and hide in Power Pages sites, we need to rely on jQuery for extensive manipulation of DOM. The library provides these functionality in simple, clear and readable syntaxes. The library will help developers who are familiar with Dataverse client script.</p>
+      <p>Check out this simple example on setting values:</p>
+      <p>
+        <xmp>
+          Xrm.Portal.Form.get(fieldName).setValue(object);
+          Xrm.Portal.Form.get(fieldName).setValue(id, name, entityLogicalName); //For lookup
+       </xmp>
+      </p>
+      <p>Check out this simple example on making fields required:</p>
+      <p>
+        <xmp>
+          Xrm.Portal.Form.get(fieldName).setRequired(bool); //Default - a default validation and a default message
+          Xrm.Portal.Form.get(fieldName).setRequired(bool, function, message); //A custom validation and a custom message
+       </xmp>
+      </p>
+      <p>Other examples:</p>
+      <p>
+        <xmp>
+          //Show or Hide Fields
+          Xrm.Portal.Form.get(fieldName).setVisible(bool);
+
+          //Enable or Disable
+          Xrm.Portal.Form.get(fieldName).setDisable(bool);
+
+          //Attach Event to field
+          Xrm.Portal.Form.get(fieldName).attachOnChange(callback);
+
+          //Remove Event from field
+          Xrm.Portal.Form.get(fieldName).removeOnChange(); 
+
+          //Various Datepicker features
+          Xrm.Portal.Form.get(dateTimeFieldName).getData().options({options});
+          Xrm.Portal.Form.get(dateTimeFieldName).getData().options({ sideBySide: true}); //To show date component and time component side by side
+          Xrm.Portal.Form.get(dateTimeFieldName).getData().minDate(new Date()); //To disable selecting past date
+       </xmp>
+      </p>
+      
+      <p><a href="https://github.com/dynamicscode/XrmPortalJS" target="_blank" class="btn btn-default"> View More</a></p>
+    
+    </div>
+  </div>
+</div>

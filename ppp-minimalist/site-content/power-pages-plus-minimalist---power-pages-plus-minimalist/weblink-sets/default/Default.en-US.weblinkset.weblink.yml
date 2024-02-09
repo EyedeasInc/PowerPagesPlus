@@ -1,0 +1,46 @@
+- adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_displaypagevalidation: false
+  adx_filecontent: 
+  adx_name: Image Gallery
+  adx_openinnewwindow: false
+  adx_pageid: 67e36203-550b-f5ab-f591-d52c54503383
+  adx_publishingstateid: 6d114fc2-bbff-41a0-93e2-7e00f73b1531
+  adx_robotsfollowlink: true
+  adx_weblinkid: 2e02df23-85fe-5bd5-ba28-3a60a6123e9f
+  adx_weblinksetid: 5a91a124-5209-46c6-a0c2-6eec17bd1dd2
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Home
+  adx_openinnewwindow: false
+  adx_pageid: bb799056-69d8-4584-9118-f2467f0f6234
+  adx_publishingstateid: 6d114fc2-bbff-41a0-93e2-7e00f73b1531
+  adx_robotsfollowlink: true
+  adx_weblinkid: 789705b7-9cbe-4e00-ba90-b76230a3cb88
+  adx_weblinksetid: 5a91a124-5209-46c6-a0c2-6eec17bd1dd2
+- adx_displayimageonly: false
+  adx_displayorder: 4
+  adx_displaypagechildlinks: false
+  adx_displaypagevalidation: false
+  adx_name: Xrm Portal Library
+  adx_openinnewwindow: false
+  adx_pageid: bf35eb2d-a65d-4c83-b119-78258c79b7fa
+  adx_publishingstateid: 6d114fc2-bbff-41a0-93e2-7e00f73b1531
+  adx_robotsfollowlink: true
+  adx_weblinkid: a97febca-4e40-b9ea-d868-c31d7546dceb
+  adx_weblinksetid: 5a91a124-5209-46c6-a0c2-6eec17bd1dd2
+- adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_displaypagevalidation: false
+  adx_filecontent: 
+  adx_name: Font Awesome
+  adx_openinnewwindow: false
+  adx_pageid: c66db3e2-756a-c59d-55e0-fe0b205ec037
+  adx_publishingstateid: 6d114fc2-bbff-41a0-93e2-7e00f73b1531
+  adx_robotsfollowlink: true
+  adx_weblinkid: fbb62504-338f-f84b-80d0-1c7e7ec74029
+  adx_weblinksetid: 5a91a124-5209-46c6-a0c2-6eec17bd1dd2
