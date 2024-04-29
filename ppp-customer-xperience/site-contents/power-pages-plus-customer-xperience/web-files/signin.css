@@ -1,0 +1,268 @@
+/*********		SIGN IN 		*******/
+#content-container.signinpage {
+    /* background-image: linear-gradient(180deg, var(--portalThemeColor2) 10%, var(--portalThemeColor1) 100%); */
+    background-image: url('/account-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 23%;
+    margin-top: -18px;
+}
+
+    #content-container.signinpage #content .nav.nav-tabs {
+        display: none !important;
+    }
+
+
+
+    /* Sign In form */
+    /* #content-container.signinpage .page-content.row .row { */
+    #content-container.signinpage .page-content.row>.row {
+        background: #ffffff;
+        border-radius: .25rem !important;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+@media (min-width: 992px) {
+    #content-container.signinpage .page-content.row .row {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    #content-container.signinpage .page-content {
+        flex-direction: column-reverse;
+    }
+
+        #content-container.signinpage .page-content.row .row {
+            background: #fff;
+        }
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+    #content-container.signinpage .page-content.row .row .col-md-6 {
+        width: 100%;
+    }
+
+    #content-container.signinpage .page-content.row .row .col-md-6 .form-group .label,
+    #content-container.signinpage .page-content.row .row .col-md-6 .form-group .col-sm-8 {
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        max-width: 100%;
+    }
+
+    #content-container.signinpage .page-content.row .row .col-md-6 .form-group .form-control {
+        padding: 1em;
+    }
+
+/* #content-container.signinpage .page-content #submit-signin-local {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    display: block;
+    width: 50%;
+} */
+
+#content-container.signinpage .page-content #submit-signin-local {
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    display: block;
+    width: 107%;
+}
+
+#content-container.signinpage .page-content .btn-default {
+    padding: .5rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    width: 107%;
+    padding: 6px 20px;
+    margin-top: 5px;
+}
+
+#mainContent > div.row > div:nth-child(1) > form > div > div:nth-child(5) > div{
+    width: 100%;
+}
+
+#mainContent > div.row > div:nth-child(1) > form > div > div:nth-child(6) > div {
+    width: 100%;
+}
+
+#content-container.signinpage .page-content .checkbox {
+    float: right;
+}
+
+#content-container.signinpage .page-content .offset-md-4 {
+    margin-left: 0%;
+}
+
+/* #content-container.signinpage .page-content .col-md-8 {
+    width: 100%;
+} */
+
+#content-container.signinpage .page-content.row .row .col-md-6 form fieldset {
+    position: relative;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn[name='provider'] {
+    margin: 5px auto !important;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    flex: 0 0 auto;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn[title*="Facebook"] {
+    border-color: #4c70ba;
+    background: #4c70ba url('[...]/facebook.png') no-repeat 5% center;
+    background-size: auto 40%;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn[title*="Google"] {
+    border-color: #4285F4;
+    background: #4285F4 url('[...]/google.png') no-repeat 5% center;
+    background-size: auto 40%;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn[title*="LinkedIn"] {
+    border-color: #0077B5;
+    background: #0077B5 url('[...]/linkedin.png') no-repeat 5% center;
+    background-size: auto 40%;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn[title*="Azure AD-kontoen"] {
+    border-color: #00a4ef;
+    background: #00a4ef url('[...]/signinwithmicrosoft.jpg') no-repeat 5% center;
+    background-size: 100% auto;
+    color: transparent !important;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn:hover {
+    background-color: #efb225;
+}
+
+#content-container.signinpage .page-content.row .row .col-md-6 button.btn[title*="Skill-interne"] {
+    border-color: transparent;
+    background-color: transparent;
+    background: tranparent;
+    color: #333;
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+}
+
+    #content-container.signinpage .page-content.row .row .col-md-6 button.btn[title*="Skill-interne"]:hover {
+        background: rgba(0,0,0,0.1);
+        border-color: #efb225;
+    }
+
+/* Redeem Invotation Code Page */
+#content-container.signinpage.redeem {
+    z-index: 1;
+}
+
+    #content-container.signinpage.redeem #content .page-content form {
+        background: #ffffff;
+        border-radius: .25rem !important;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding-left: 2.14rem !important;
+        padding-right: 2.14rem !important;
+        padding-top: 2.85rem !important;
+        padding-bottom: 2.85rem !important;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+@media (min-width: 992px) {
+    #content-container.signinpage.redeem #content .page-content form {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+#content-container.signinpage.redeem #content .page-content form legend span {
+    padding: 0px 10px;
+}
+
+input#InvitationCode, label[for*="InvitationCode"] {
+    width: 100%;
+    display: block;
+    word-break: normal;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+
+#content-container.signinpage.redeem .col-sm-offset-2.col-sm-10 .checkbox {
+    display: none;
+}
+
+button#submit-redeem-invitation {
+    margin: 5px auto !important;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+    button#submit-redeem-invitation:hover {
+        background: #008895;
+    }
+
+/* Register */
+#ContentContainer_MainContent_PageCopy_PageCopy {
+    margin: 0px;
+}
+
+#Register {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #fff;
+    padding-top: 2rem;
+    border-radius: .25rem;
+}
+
+#ContentContainer_MainContent_MainContent_SecureRegister .alert {
+    display: none;
+}
+
+#Register #ContentContainer_MainContent_MainContent_SecureRegister .row {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+    #Register #ContentContainer_MainContent_MainContent_SecureRegister .row .col-md-6 button.btn[title*="Skill-interne"] {
+        display: none;
+    }
+
+
+    /* FOOTER ADJUSTMENS */
+    footer .footer-bottom h4 {
+        color: var(--portalThemeColor8) !important;
+    }
+
+    .wrapper-body{
+        min-height: calc(100% - 339px) !important;
+    }

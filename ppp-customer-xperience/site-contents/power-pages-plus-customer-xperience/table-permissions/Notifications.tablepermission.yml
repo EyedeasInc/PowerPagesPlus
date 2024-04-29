@@ -1,0 +1,19 @@
+adx_accountrelationship: 
+adx_append: false
+adx_appendto: false
+adx_childTablePermissions: []
+adx_contactrelationship: msppp_contact_msppp_notification_14
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: msppp_notification
+adx_entityname: Notifications
+adx_entitypermission_webrole:
+- 469d70df-f256-458f-8574-1ec42a7233d0
+- 518b25ed-ac7b-43fa-9da0-31decb0b43d4
+adx_entitypermissionid: de418072-5219-4501-97aa-96938dd2ddef
+adx_filecontent: 
+adx_parententitypermission: 
+adx_parentrelationship: 
+adx_read: true
+adx_scope: 756150001
+adx_write: true

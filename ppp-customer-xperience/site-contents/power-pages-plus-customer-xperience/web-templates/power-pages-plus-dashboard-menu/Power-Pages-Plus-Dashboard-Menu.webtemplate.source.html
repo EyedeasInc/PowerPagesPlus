@@ -1,0 +1,32 @@
+{% assign nav = weblinks['Dashboard Navigation'] %}
+
+<li class="nav-item">
+    {% for link in nav.weblinks %}
+        {%if link.weblinks.size > 0 %}
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" 
+                data-target="#collapse-{{link.id}}" aria-expanded="false" 
+                aria-controls="collapse-{{link.id}}">
+                <i class="{{ link.image.url }}"></i>
+                <span>
+                    {{ link.name }}
+                </span>
+            </a>
+
+            <div id="collapse-{{link.id}}" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" style="">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">{{ link.name }}</h6>
+                    {% for subLink in link.weblinks %}
+                        <a class="collapse-item" href="{{subLink.url}}">{{subLink.name}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            <a class="nav-link" href="{{ link.url }}">
+                <i class="{{ link.image.url }}"></i>
+                <span>{{ link.name }}</span></a>
+        {% endif %}
+    {% endfor %}
+</li>
+
+
+

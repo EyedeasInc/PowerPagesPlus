@@ -1,0 +1,17 @@
+- adx_name: Restrict Read on Dashboard
+  adx_right: 2
+  adx_scope: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - 469d70df-f256-458f-8574-1ec42a7233d0
+  - 518b25ed-ac7b-43fa-9da0-31decb0b43d4
+  adx_webpageaccesscontrolruleid: 281cbc59-c99d-26f6-bde0-11d6879f67b0
+  adx_webpageid: 8767d10a-f954-ea97-7e0f-f93afe5870d4
+- adx_name: Grant Change to Content
+  adx_right: 1
+  adx_webpageaccesscontrolruleid: 69850243-c5f5-4481-b91b-d8fbfd866066
+- adx_name: Grant Change to Administrators
+  adx_right: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - 469d70df-f256-458f-8574-1ec42a7233d0
+  adx_webpageaccesscontrolruleid: 84fadcb6-75b5-4e94-8bd1-2a96e6bd1ffe
+  adx_webpageid: 9f83f7a2-22f5-4649-a269-74a699a16001

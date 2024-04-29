@@ -1,0 +1,126 @@
+
+<script>
+$(function() {
+    loadNotificationControls("{{category}}");
+
+    //Refresh Alerts every 60 seconds
+    setInterval(function () {
+        loadNotificationControls("{{category}}");
+    }, 60000);
+});
+
+function loadNotificationControls(category){
+    
+    //$('#badgeLabel' + category).hide();
+    
+    //Alerts
+    let categoryValue = 948700000;
+    //Messages
+    if (category === "Email")
+        categoryValue = 948700001;
+
+    webapi.safeAjax({
+        type: "GET",
+        url: "/_api/msppp_notifications?$select=createdon,msppp_notificationid,msppp_category,msppp_description,msppp_externalpageurl,msppp_recordid,msppp_summary,msppp_title,statecode,statuscode&$filter=statuscode eq 1 and msppp_category eq " + categoryValue,     
+        contentType: "application/json",
+        success: function (result, status, xhr) {
+            //Notification Icon & Badge
+            $('#badgeLabel' + category).html(result.value.length);
+            $('#badgeLabel' + category).show();
+
+            let notificationItems = ''; 
+
+            //Notification Dropdown
+            $.each(result.value,  function(index, notification){
+
+                let notificationLink = '#';
+                if (notification.msppp_externalpageurl !== null) {
+                    notificationLink = notification.msppp_externalpageurl;
+                    if (notification.msppp_recordid !== null)
+                        notificationLink = notification.msppp_externalpageurl + '?id=' + notification.msppp_recordid;
+                }
+
+                notificationItems += `
+                    <a class="dropdown-item d-flex align-items-center"
+                        data-notificationid="${notification.msppp_notificationid}"
+                        data-category="${category}"
+                        data-link="${notificationLink}" onclick="markAlertAsRead(this);">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-primary">
+                                ${category === "Email" ? '<i class="fas fa-envelope text-white"></i>' : '<i class="fas fa-file-alt text-white"></i>'}
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">${new Date(notification.createdon).toDateString()}</div>
+                            <span class="text-truncate">${notification.msppp_summary}</span>
+                        </div>
+                    </a>`;
+
+            });
+
+            if(result.value.length === 0){
+                notificationItems = `<a class="dropdown-item text-center small text-gray-500" href="#">No items</a>`;
+                $('#badgeLabel' + category).show();
+            }
+            
+            let headerNotification = `<h6 class="dropdown-header">${category} Center</h6>`;
+            $('#notificationList' + category).html(headerNotification + notificationItems);
+
+          },
+        error: function (error) {
+            console.log("Error:" + error);
+            $('#badgeLabel' + category).html('error');
+        }
+      });  
+}
+
+
+function markAlertAsRead(notificationItem){
+    let notificationId = $(notificationItem).data('notificationid');
+    let category = $(notificationItem).data('category');
+    let link = $(notificationItem).data('link');
+    
+    webapi.safeAjax({
+        type: "PATCH",
+        url: "/_api/msppp_notifications(" + notificationId + ")",     
+        contentType: "application/json",
+        data: JSON.stringify({
+            "statecode": 1, 
+            "statuscode": 2
+        }),
+        success: function (result, status, xhr) {
+            loadNotificationControls(category);
+            window.location = link;
+        },
+        error: function (error) {
+            console.log("Error:" + error);
+        }
+    });
+
+}
+
+</script>
+
+<!-- Nav Item - {{ category }} -->
+<li class="nav-item dropdown no-arrow mx-1">
+    <a class="nav-link dropdown-toggle" href="#" id="{{category}}Dropdown" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% if category == "Email" %}
+            <i class="fas fa-envelope fa-fw"></i>
+        {% else %}
+            <i class="fas fa-bell fa-fw"></i>
+        {% endif %}
+        
+        <!-- Counter - {{ category }} -->
+        <span class="badge badge-danger badge-counter" id="badgeLabel{{category}}">
+            
+        </span>
+    </a>
+    <!-- Dropdown - {{ category }} -->
+    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+        aria-labelledby="{{category}}Dropdown" id="notificationList{{category}}">
+        <h6 class="dropdown-header">
+            {{ category }} Center
+        </h6>
+    </div>
+</li>

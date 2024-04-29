@@ -1,0 +1,18 @@
+adx_attachfilelabel: ''
+adx_attachfilemaxsize: 
+adx_captcharequired: true
+adx_entityformid: 80d93c6b-ce1f-432a-acff-d1f028c6db23
+adx_entityname: msppp_notification
+adx_entitypermissionsenabled: true
+adx_entitysourcetype: 
+adx_formname: Information
+adx_hideformonsuccess: true
+adx_lcid: 1033
+adx_mode: 100000000
+adx_name: Information
+adx_onsuccess: 756150000
+adx_recordidquerystringparametername: 
+adx_redirecturl: 
+adx_redirectwebpage: 
+adx_showcaptchaforauthenticatedusers: true
+adx_successmessage: ''
