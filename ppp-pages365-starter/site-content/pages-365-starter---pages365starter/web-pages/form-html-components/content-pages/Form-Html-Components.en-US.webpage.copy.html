@@ -1,0 +1,170 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container-fluid" style="display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; padding: 16px; margin: 60px 0px;">
+      {% include 'Page365 Ribbon' %}
+    </div>
+  </div>
+</div>
+
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container-fluid" style="display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: row; min-width: 250px; padding: 16px; margin: 60px 0px;">
+      <!-- Left column -->
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title mb-3">Invoice</h6>
+            <div class="mb-3">
+              <label class="form-label">Invoice ID</label>
+              <input class="form-control" value="INV-01000-L2J8F8" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input class="form-control" value="5 Café BG-1 Pro Grinders…" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Currency</label>
+              <input class="form-control" value="Canadian Dollar" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Price List</label>
+              <input class="form-control" value="Contoso Coffee…" readonly>
+            </div>
+            <div class="mb-0">
+              <label class="form-label">Prices Locked</label>
+              <input class="form-control" value="Yes" readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h6 class="card-title mb-3">Shipping Dates</h6>
+            <div class="mb-3">
+              <label class="form-label">Date Delivered</label>
+              <input class="form-control" placeholder="—" readonly>
+            </div>
+            <div class="mb-0">
+              <label class="form-label">Due Date</label>
+              <div class="input-group">
+                <input class="form-control" placeholder="—" readonly>
+                <span class="input-group-text"><i class="bi bi-calendar3"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Middle column -->
+      <div class="col-lg-6 px-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h6 class="card-title mb-0">Products</h6>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-lg me-1"></i>Add products</button>
+                <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-clockwise me-1"></i>Refresh</button>
+              </div>
+            </div>
+            <div class="row g-2 mb-2">
+              <div class="col-12 col-md-4">
+                <label class="form-label">Group By</label>
+                <select class="form-select form-select-sm">
+                  <option selected>(no grouping)</option>
+                </select>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-sm align-middle">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <th>Properties</th>
+                    <th>Unit</th>
+                    <th>Price Per Unit</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>Extended Amount</th>
+                    <th class="text-end">↗</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="bi bi-box-seam me-1"></i> Café BG-1</td>
+                    <td>Not Configured</td>
+                    <td>Primary Unit</td>
+                    <td>CA$4,999.00</td>
+                    <td>5.00000</td>
+                    <td>—</td>
+                    <td>CA$24,995.00</td>
+                    <td class="text-end">
+                      <button class="icon-btn"><i class="bi bi-three-dots"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-3">
+              <div class="section-label mb-2">Amounts</div>
+              <div class="row g-2 amount-row">
+                <div class="col-md-6">
+                  <label class="form-label">Detail Amount</label>
+                  <input class="form-control" value="CA$24,995.00" readonly>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">(-) Discount (%)</label>
+                  <input class="form-control" placeholder="—" readonly>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Pre-Freight Amount</label>
+                  <input class="form-control" value="CA$24,995.00" readonly>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">(+) Freight Amount</label>
+                  <input class="form-control" placeholder="—" readonly>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">(+) Total Tax</label>
+                  <input class="form-control" value="CA$0.00" readonly>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Total Amount</label>
+                  <input class="form-control" value="CA$24,995.00" readonly>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title mb-3">Sales Information</h6>
+            <div class="mb-3">
+              <label class="form-label">Opportunity</label>
+              <input class="form-control" value="5 Café BG-1 Pro Grinders for…" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Order</label>
+              <input class="form-control" value="5 Café BG-1 Pro Grinders for…" readonly>
+            </div>
+            <div class="mb-0">
+              <label class="form-label">Customer</label>
+              <input class="form-control" value="Northwind Traders" readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h6 class="card-title mb-2">Description</h6>
+            <textarea class="form-control" rows="8" placeholder="—" readonly></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

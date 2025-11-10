@@ -1,0 +1,16 @@
+.chart-box { height: 260px; }
+
+.chart-box canvas { width: 100% !important; height: 100% !important; }
+
+.metric { font-size: .8rem; color:#6c757d; }
+
+.metric .val { display:block; font-size:1.1rem; color:#212529; font-weight:600; }
+
+.metric-pill {
+    background:#f1f3f5;
+    padding:.35rem .6rem;
+    border-radius: .75rem;
+    line-height:1;
+    min-width: 88px;
+    text-align:center;
+}

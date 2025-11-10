@@ -1,0 +1,281 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container-fluid" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; margin: 60px 0px; padding: 16px;">
+      {% include 'Page365 Ribbon' %}
+    </div>
+  </div>
+</div>
+
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container-fluid" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; margin: 60px 0px; padding: 16px;">
+      <div class="row g-3">
+        <!-- Sales by Stage (Doughnut) -->
+        <div class="col-12 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="card-title">Sales by Stage</h5>
+                  <div class="text-muted small">Prospecting vs Negotiation vs Won</div>
+                </div>
+                <div class="d-flex gap-2">
+                  <div class="metric metric-pill">
+                    <span class="val" id="m-total-deals">0</span>
+                    <span class="metric">Total Deals</span>
+                  </div>
+                  <div class="metric metric-pill">
+                    <span class="val" id="m-won">0</span>
+                    <span class="metric">Closed‑Won</span>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-box mt-3">
+                <canvas id="salesStageChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deals by Priority (Bar) -->
+        <div class="col-12 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="card-title">Deals by Priority</h5>
+                  <div class="text-muted small">High • Normal • Low</div>
+                </div>
+                <div class="metric metric-pill">
+                  <span class="val" id="m-priority-total">0</span>
+                  <span class="metric">Total</span>
+                </div>
+              </div>
+              <div class="chart-box mt-3">
+                <canvas id="priorityChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel — Pipeline vs Closed-Won (Stacked Bar) -->
+        <div class="col-12 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="card-title">Channel — Pipeline vs Closed‑Won</h5>
+                  <div class="text-muted small">Phone • Email • Web • Events • Partners</div>
+                </div>
+                <div class="d-flex gap-2">
+                  <div class="metric metric-pill">
+                    <span class="val" id="m-pipeline">0</span>
+                    <span class="metric">Pipeline</span>
+                  </div>
+                  <div class="metric metric-pill">
+                    <span class="val" id="m-winrate">0%</span>
+                    <span class="metric">Win Rate</span>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-box mt-3">
+                <canvas id="channelChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container-fluid" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; margin: 60px 0px; padding: 16px;">
+      <div class="card mb-12 shadow-sm">
+        <div class="card-header">Html Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table id="markersTable" class="table table-hover align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th style="width: 44px;"><input type="checkbox" id="selectAll" class="form-check-input ms-1"></th>
+                  <th class="text-nowrap">Name <i class="fa-solid fa-arrow-up-1-9 text-muted ms-1"></i></th>
+                  <th class="text-nowrap">Page <i class="fa-solid fa-sort text-muted ms-1"></i></th>
+                  <th class="text-nowrap">Website <i class="fa-solid fa-sort text-muted ms-1"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row -->
+                <tr>
+                  <td><input type="checkbox" class="form-check-input ms-1 row-check"></td>
+                  <td><a href="#" class="link-primary text-decoration-none">Access Denied</a></td>
+                  <td><a href="#" class="text-decoration-none">Access Denied</a></td>
+                  <td><a href="#" class="text-decoration-none">Power Pages Extension Customer Service Portal - ppcc-portal</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-check-input ms-1 row-check"></td>
+                  <td><a href="#" class="link-primary text-decoration-none">Home</a></td>
+                  <td><a href="#" class="text-decoration-none">Home</a></td>
+                  <td><a href="#" class="text-decoration-none">Power Pages Extension Customer Service Portal - ppcc-portal</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-check-input ms-1 row-check"></td>
+                  <td><a href="#" class="link-primary text-decoration-none">Page Not Found</a></td>
+                  <td><a href="#" class="text-decoration-none">Page Not Found</a></td>
+                  <td><a href="#" class="text-decoration-none">Power Pages Extension Customer Service Portal - ppcc-portal</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-check-input ms-1 row-check"></td>
+                  <td><a href="#" class="link-primary text-decoration-none">Profile</a></td>
+                  <td><a href="#" class="text-decoration-none">Profile</a></td>
+                  <td><a href="#" class="text-decoration-none">Power Pages Extension Customer Service Portal - ppcc-portal</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-check-input ms-1 row-check"></td>
+                  <td><a href="#" class="link-primary text-decoration-none">Search</a></td>
+                  <td><a href="#" class="text-decoration-none">Search</a></td>
+                  <td><a href="#" class="text-decoration-none">Power Pages Extension Customer Service Portal - ppcc-portal</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Footer -->
+          <div class="card-footer bg-white py-2"><small id="rowCount" class="text-muted">Rows: 5</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+(() => {
+  //Set Default Font Family
+  const chartFont = getComputedStyle(document.documentElement).getPropertyValue('--bs-body-font-family');
+  Chart.defaults.font.family = chartFont;
+  // Fluent-style palette aligned to your screenshot
+  const colors = {
+    primary:'#0066CC',   // active blue
+    info:'#00A6A6',      // teal
+    lightBlue:'#9BCBF7', // light blue
+    gray:'#C7C7C7',      // gray
+    coral:'#F27A9C'      // resolved/pink
+  };
+
+  // Sample data
+  const stageData = [18, 12, 30]; // Prospecting, Negotiation, Closed‑Won
+  const priorityData = [8, 6, 4]; // High, Normal, Low
+  const channelPipeline = [12,14,16,7,5];
+  const channelWon = [5,6,9,3,2];
+
+  // ---- Metrics (computed) ----
+  const totalDeals = stageData.reduce((a,b)=>a+b,0);
+  const totalWon = stageData[2];
+  const pipelineTotal = channelPipeline.reduce((a,b)=>a+b,0);
+  const wonTotal = channelWon.reduce((a,b)=>a+b,0);
+  const winRate = (wonTotal / (wonTotal + pipelineTotal)) * 100;
+
+  // Simple count-up animation for metrics
+  function countUp(el, end, suffix='') {
+    const node = document.getElementById(el);
+    const duration = 900; // ms
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min(1, (now - start) / duration);
+      const val = end * p;
+      node.textContent = (suffix === '%' ? val.toFixed(0) + '%' : Math.round(val));
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // Populate metrics
+  countUp('m-total-deals', totalDeals);
+  countUp('m-won', totalWon);
+  countUp('m-priority-total', priorityData.reduce((a,b)=>a+b,0));
+  countUp('m-pipeline', pipelineTotal);
+  countUp('m-winrate', Math.round(winRate), '%');
+
+  // ---- Staggered animation helper for Chart.js ----
+  const stagger = (baseDelay=150, perBar=60) => (ctx) => {
+    let i = ctx.dataIndex ?? 0;
+    let d = ctx.datasetIndex ?? 0;
+    return baseDelay + (i * perBar) + (d * 120);
+  };
+
+  // Create charts with sequential start (slight offsets)
+  const startCharts = () => {
+    // 1) Sales by Stage (Doughnut)
+    new Chart(document.getElementById('salesStageChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Prospecting','Negotiation','Closed‑Won'],
+        datasets: [{
+          data: stageData,
+          backgroundColor: [colors.info, colors.lightBlue, colors.primary],
+          borderWidth: 2,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        animation: { delay: stagger(100, 120), duration: 900, easing: 'easeOutQuart' },
+        plugins: { legend: { position: 'bottom' } },
+        cutout: '60%'
+      }
+    });
+
+    // 2) Deals by Priority (Bar) – start a bit later
+    setTimeout(() => {
+      new Chart(document.getElementById('priorityChart'), {
+        type: 'bar',
+        data: {
+          labels: ['High','Normal','Low'],
+          datasets: [{
+            data: priorityData,
+            backgroundColor: [colors.primary, colors.gray, colors.info],
+            borderRadius: 3
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          animation: { delay: stagger(100, 80), duration: 900, easing: 'easeOutQuart' },
+          scales: { y: { beginAtZero: true, ticks: { precision: 0 } } },
+          plugins: { legend: { display: false } }
+        }
+      });
+    }, 250);
+
+    // 3) Channel (Stacked Bar) – start last
+    setTimeout(() => {
+      new Chart(document.getElementById('channelChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Phone','Email','Web','Events','Partners'],
+          datasets: [
+            { label: 'Pipeline',   data: channelPipeline, backgroundColor: colors.lightBlue, borderRadius: 3 },
+            { label: 'Closed‑Won', data: channelWon,     backgroundColor: colors.coral,     borderRadius: 3 }
+          ]
+        },
+        options: {
+          maintainAspectRatio: false,
+          animation: { delay: stagger(120, 70), duration: 900, easing: 'easeOutQuart' },
+          scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } } },
+          plugins: { legend: { position: 'bottom' } }
+        }
+      });
+    }, 500);
+  };
+
+  // Animate on first view (IntersectionObserver)
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { startCharts(); obs.disconnect(); }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(document.querySelector('.container-fluid'));
+})();
+</script>
+

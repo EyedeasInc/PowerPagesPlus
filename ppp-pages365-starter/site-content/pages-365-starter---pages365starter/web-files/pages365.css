@@ -1,0 +1,383 @@
+
+/*! D365 Bootstrap Extension — Power Pages adaptation
+   Notes:
+   - Load this file LAST (after theme.css, portalbasictheme.css, and your current d365-bootstrap-extension.css)
+   - Styles are scoped to `.wrapper-body` to avoid collisions with portal chrome
+   - Header `.d365-appbar` styles remain global on purpose
+*/
+
+:root {
+  --d365-nav: #1f2a44;
+  --d365-nav-contrast: #fff;
+  --d365-sidebar-bg: rgb(240, 240, 240);
+  --d365-sidebar-color: #1f2937;;
+  --d365-sidebar-border: #e5e8ef;
+  --d365-body-bg: #f5f5f5;
+  --d365-primary: #0f6cbd;
+  --d365-primary-600: #0b5aa5;
+  --d365-primary-50: #e6f1fb;
+  --d365-info: #107c10;
+  --d365-danger: #d13438;
+  --d365-warning: #f7630c;
+  --d365-muted: #727a87;
+  --d365-card: #ffffff;
+  --d365-shadow: 0 1px 2px rgba(16,24,40,.08), 0 4px 12px rgba(16,24,40,.06);
+  --d365-radius: 5px;
+  --d365-radius-sm: 10px;
+  --d365-radius-lg: 18px;
+  --d365-focus: #e1effe;
+  --d365-focus-ring: 0 0 0 .25rem rgba(15,108,189,.25);
+  --d365-grid-border: #eef1f5;
+  --d365-accent: #7551e9;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+/*Initial Styling samples - Basic Bootstrap Dashboard */
+.sidebar, .sidebar .section {
+    background: var(--d365-sidebar-bg) !important;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    height: 100%;
+    left: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 0px;
+    position: absolute;
+}
+
+main {
+  padding-left: 10px !important;
+}
+
+footer .footer-bottom {
+  bottom: 0;
+  /* position: fixed; */
+  /* height:30px; */
+}
+
+/* End Initial Styling samples - Basic Bootstrap Dashboard */
+
+body {
+  font-family: var(--bs-body-font-family);
+  background: var(--d365-body-bg) !important;
+}
+
+.card {
+    border: 1px solid var(--d365-grid-border);
+    border-radius: var(--d365-radius);
+    box-shadow: var(--d365-shadow);
+}
+
+.card-header {
+    background: #fff;
+    border-bottom: 1px solid var(--d365-grid-border);
+    color: var(--bs-card-cap-color);
+    font-weight: 600;
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    margin-bottom: 0;
+}
+
+.card-header:first-child {
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+}
+
+a, p, .p, .page_section p, .section-diagonal-left p, .section-diagonal-right p, p.form-text span {
+  font-family: var(--bs-body-font-family);
+}
+
+h1.siteTitle, .static-top.navbar-dark .navbar-brand a h1.siteTitle, .static-top.navbar-dark .navbar-brand a h1.siteTitle > span {
+  color: var(--d365-nav-contrast) !important;
+  font-family: var(--bs-body-font-family);
+  font-weight: 600;
+  font-size: 1.143em;
+}
+
+p, .p, .page_section p, .section-diagonal-left p, .section-diagonal-right p, p.form-text span {
+  font-size: 16px;
+}
+
+.link-primary {
+  color: rgb(17, 94, 163);
+}
+
+.nav-link {
+  color: var(--d365-sidebar-color);
+  text-decoration: none;
+}
+
+.nav-link a {
+  font-size: 1em;
+}
+
+.nav-link a:hover {
+  color: var(--d365-sidebar-color);
+  text-decoration: none;
+}
+
+.nav > li > a > i {
+  margin-right: 5px;
+}
+
+.nav > li > a:hover {
+  color: var(--d365-sidebar-color);
+  background-color: var(--d365-sidebar-bg);  
+  text-decoration: none;
+}
+
+.static-top.navbar-dark {
+    background-color: var(--d365-nav);   
+}
+
+.static-top.navbar-dark .navbar-brand {
+    height: 20px;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > li > a {
+  color: var(--d365-nav-contrast) !important;
+  font-family: var(--bs-body-font-family);
+  font-size: 1em !important;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > li > a:hover {
+  text-decoration:none;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: var(--bs-body-font-family);
+}
+
+/* Avatar */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .avatar-green { background-color: #1cc88a; }
+  .avatar-purple { background-color: #9b59b6; }
+  .avatar-blue { background-color: #007bff; }
+  .intro-btn {
+    background-color: #e8f2ff;
+    color: #0d6efd;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border: none;
+  }
+  .intro-btn:hover {
+    background-color: #d6e8ff;
+  }
+
+/* Power Pages Dataverse Components  */
+
+/* Modern Lists */
+
+.primarySet-167 {
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  margin-left: -20px;
+  border-radius: var(--bs-border-radius-lg) !important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.label-174 {
+  font-weight: 400;
+}
+.root-170 {
+  border: none;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.root-170:hover {
+  border: none;
+  border-radius: var(--bs-border-radius-lg) !important;
+  background-color: #f5f5f5 !important;
+}
+.root-265 {
+  background-color: rgba(199, 199, 199, 0.5) !important
+}
+
+.ms-DetailsList {
+  margin-top:10px;
+}
+
+div.page-container>span>div{
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.ms-CommandBar,.ms-DetailsHeader, .ms-DetailsRow-cell, .ms-Button--hasMenu {
+  background-color: rgb(255, 255, 255);
+}
+
+.component-area{
+  min-height:100dvh;
+}
+
+/* End Modern Lists */
+
+/* Basic Forms */
+
+#modalTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+#modalIframe {
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+}
+
+.main-135 {
+  background-color: rgb(255, 255, 255);
+}
+
+
+#content-container{
+  max-width:100%;
+}
+
+label {
+  font-weight: 400;
+}
+
+.crmEntityFormView .cell {
+  padding: 0 5px 15px;;
+}
+
+.form-control {
+    background-color: #f5f5f5 !important;
+    border: none !important;
+    color: #000000;
+    min-height: 36px;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: var(--bs-border-radius-sm) !important;
+  background-color: var(--d365-primary-600);
+  color: #fff;
+  font-weight: 600;
+  font-family: var(--bs-body-font-family);
+  height: 45px;
+}
+
+.btn-primary:hover {
+  border: none;
+  border-radius: var(--bs-border-radius-sm) !important;
+  background-color: var(--d365-primary) !important;
+  color: #fff;
+}
+
+.btn-default {
+  font-weight: 600;
+  font-family: var(--bs-body-font-family);
+  height: 45px;
+}
+
+.crmEntityFormView .actions { 
+  border: none;
+}
+
+.crmEntityFormView, .entitylist, .modal-content, .popover-content {
+  border: none;
+}
+
+.crmEntityFormView div.description {
+    margin-top: -2px;
+    margin-bottom: 2px;
+    font-size: 10px;
+}
+
+.wrapper-body {
+  background-color: rgb(255, 255, 255);
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  height: 36px;
+  border-color: var(--d365-sidebar-bg);
+  color: #ccc;
+}
+
+.input-group-btn .btn {
+    white-space: nowrap;
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+    height: 36px;
+    border-color: var(--d365-sidebar-bg);
+    color: #ccc;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) :hover {
+  background-color : var(--d365-nav);
+  border-color: #fff;
+  color: #fff;
+}
+
+.input-group-btn .btn :hover{
+  background-color : var(--d365-nav);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Private Mode Banner - Only do it for demo purposes*/
+.private-mode-banner {
+  visibility: hidden;
+}
+
+.kb-list {
+  display:inline-grid;
+}
+.kb-title { 
+  font-weight:600; margin:0 0 4px; 
+}
+.kb-type { 
+  font-size:.9em; 
+  color:#6c757d; 
+  margin-bottom:6px; 
+}
+
+.kb-snippet { 
+  color:#333; 
+  font-size:.95em; 
+  overflow:hidden; 
+  display:-webkit-box; 
+  -webkit-line-clamp:3; 
+  -webkit-box-orient:vertical; 
+}
+
+.columnBlockLayout{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+}
+
+@media (max-width: 768px){
+  .static-top.navbar-dark .navbar-brand {
+    height: 57px;
+  }
+  .nav-item-label {
+    font-size: 0px;
+  }
+}
+
+@media (min-width: 768px){
+  .nav-item-label{
+    font-size: 0.60rem;
+  }
+}
+
+@media (min-width: 992px){
+  .nav-item-label{
+    font-size: 1rem;
+  }
+}
+

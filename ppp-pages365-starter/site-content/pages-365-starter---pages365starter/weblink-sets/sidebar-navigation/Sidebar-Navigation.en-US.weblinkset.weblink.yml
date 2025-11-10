@@ -1,0 +1,48 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_imageurl: bi bi-newspaper
+  adx_name: Form Html Components
+  adx_openinnewwindow: false
+  adx_pageid: 03ee4014-714d-57df-a73c-15537d84bf68
+  adx_publishingstateid: a259ce53-d63f-4da8-958d-f3581d35dbb5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 1eb8f72f-2bbc-f011-bbd2-000d3a36bec8
+  adx_weblinksetid: 62bfeca2-26bc-f011-bbd2-000d3a36bec8
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_imageurl: bi bi-speedometer2
+  adx_name: Dashboard
+  adx_openinnewwindow: false
+  adx_pageid: 8834415b-87ed-4c58-87e4-64597db26e99
+  adx_publishingstateid: a259ce53-d63f-4da8-958d-f3581d35dbb5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 474f51c1-26bc-f011-bbd2-000d3a36bec8
+  adx_weblinksetid: 62bfeca2-26bc-f011-bbd2-000d3a36bec8
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_imageurl: bi bi-archive
+  adx_name: Other Html Components
+  adx_openinnewwindow: false
+  adx_pageid: baf3d3c9-4cf8-e61e-eafc-bf42a94c7bdf
+  adx_publishingstateid: a259ce53-d63f-4da8-958d-f3581d35dbb5
+  adx_robotsfollowlink: true
+  adx_weblinkid: d5f786dc-26bc-f011-bbd2-000d3a36bec8
+  adx_weblinksetid: 62bfeca2-26bc-f011-bbd2-000d3a36bec8
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 4
+  adx_displaypagechildlinks: false
+  adx_imageurl: bi bi-gear
+  adx_name: Blank Page
+  adx_openinnewwindow: false
+  adx_pageid: 5513fd6e-a766-95be-8df0-660084bd0fe6
+  adx_publishingstateid: a259ce53-d63f-4da8-958d-f3581d35dbb5
+  adx_robotsfollowlink: true
+  adx_weblinkid: e986a2ee-26bc-f011-bbd2-000d3a36bec8
+  adx_weblinksetid: 62bfeca2-26bc-f011-bbd2-000d3a36bec8
